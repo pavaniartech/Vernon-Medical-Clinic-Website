@@ -706,7 +706,12 @@ span {
   height: 100vh;
   overflow: hidden;
 }
-
+@media (max-width: 425px) {
+  #hero {
+    height: 60vh;
+    margin-top: 30%;
+  }
+}
 #hero-video {
   position: absolute;
   top: 0;
@@ -1782,4 +1787,15 @@ h4 {
   text-align: center;
   padding: 20px;
   color: var(--white);
+}
+
+/* all media query*/
+@media (max-width: 425px) {
+  .testimonial:nth-child(even){
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .slide{
+    padding: 0;
+  }
 }
